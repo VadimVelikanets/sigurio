@@ -1,0 +1,44 @@
+/* Vars:
+  ========================================================================== */
+
+// Font
+$mainFont                : 'Nunito Sans', sans-serif;
+$font-size-root          : 16px;
+// Size
+$mainFontColor           : #000000;
+$mainFontSize            : 1.125rem;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.4;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 1024px;
+$tableWidth              : 768px;
+$smTableWidth            : 640px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+/*
+  All colors taken from:
+  https://github.com/vedees/uimini
+*/
+
+// Main color
+$default-color           : #ffffff;
+$gray-color              : #F4F6F6;
+$gray-color2             : #808080;
+$gray-color3             : #D8D8D8;
+$primary-color           : #444ce0;
+$yellow-color            : #FFC000;
+$white-color             : #FFFFFF;
+$light-color             : #FFF9E5;
+// Neutral Color
+$neutral-primary         : #303133;
+$neutral-regular         : #606266;
+$neutral-secondary       : #909399;
+$neutral-placeholder     : #C0C4CC;
+$blue-color              : #1982E3;
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
