@@ -8,6 +8,16 @@
   .main-bg{
     height: 500px;
   }
+  .workers-item {
+    margin-top: 60px;
+    img {
+      object-fit: cover;
+      width: 173px;
+      height: 160px;
+      border-radius: 30px;
+      margin-right: 30px;
+    }
+  }
 }
 
 @media(max-width: 767px) {
@@ -16,6 +26,11 @@
   }
   .h1{
     font-size: px2rem(24px);
+  }
+  .inner-page{
+    .h1{
+      font-size: px2rem(32px);
+    }
   }
   header{
     .btn-register{
@@ -182,6 +197,7 @@
         margin-bottom: 20px;
       }
     }
+
   }
 
   .popup{
@@ -221,7 +237,22 @@
       margin-bottom: 20px;
     }
   }
-
+  .workers-item{
+    img{
+      margin-bottom: 24px;
+      margin-right: 0;
+    }
+    .h2, .h3{
+      text-align: center;
+    }
+    flex-direction: column;
+  }
+  .about{
+    padding: 32px 0 0px;
+    p{
+      font-size: px2rem(16px);
+    }
+  }
 }
 
 @media(max-width: 498px){
