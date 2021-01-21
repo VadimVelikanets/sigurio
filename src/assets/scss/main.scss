@@ -200,6 +200,9 @@ main{
       margin-top: 50px;
     }
   }
+  .main-container{
+    max-width: 1089px;
+  }
 }
 .header__inner{
   display: flex;
@@ -384,15 +387,22 @@ main{
   height: 278px;
   padding: 30px 25px;
   cursor: pointer;
-  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.05), 0px 0.893452px 13.9222px rgba(0, 0, 0, 0.0243994), 0px 0.266004px 10.0595px rgba(0, 0, 0, 0.0155521);
+  box-shadow: 0px 14px 39px rgba(0, 0, 0, 0.0152351),
+              0px 5.84887px 23.4156px rgba(0, 0, 0, 0.0252107),
+              0px 3.12708px 20.6278px rgba(0, 0, 0, 0.0314047),
+              0px 1.75302px 22.3243px rgba(0, 0, 0, 0.038474),
+              0px 0.931014px 22.7732px rgba(0, 0, 0, 0.050979),
+              0px 0.387416px 17.0466px rgba(0, 0, 0, 0.07);
   border-radius: 30px 0px 0px 30px;
   span{
       position: absolute;
       transform: rotate(-90deg);
       top: 135px;
-      left: -18px;
+      left: -12px;
     }
-
+  &:hover{
+    color: $white-color;
+  }
 }
 
 .main-menu{
@@ -407,6 +417,9 @@ main{
   text-align: center;
   display: none;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar { width: 0; }
   height: 100%;
   &_active{
     display: block;
@@ -651,13 +664,49 @@ main{
   }
 }
 
-.about{
-  padding: 74px 0 140px;
+.about, .text-item{
+
   p{
     font-size: px2rem(24px);
     margin-bottom: 24px;
 
   }
+
+}
+.text-item{
+  margin-top: 86px;
+  .h1{
+    margin-bottom: 76px;
+  }
+  .h2{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  ul{
+    li{
+      font-size: px2rem(24px);
+      margin-bottom: 24px;
+      padding-left: 90px;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        display: block;
+        left: 50px;
+        top: 50%;
+        background-image: url(../img/check-circle.svg)!important;
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.about{
+  padding: 74px 0 140px;
 }
 
 .workers-item{
@@ -674,6 +723,39 @@ main{
   }
   .h3{
     margin-bottom: 24px;
+  }
+}
+
+.how-player{
+  max-width: 1314px;
+  width: 100%;
+  height: 707px;
+  margin: 84px auto 120px;
+  &__bg{
+    width: 100%;
+    height: 100%;
+    background: #404044;
+    position: relative;
+    img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+
+    }
+  }
+}
+
+.how{
+  .schema{
+    padding: 0;
+    &__inner-item{
+      margin-top: 96px;
+    }
+  }
+  .advantages {
+    padding: 48px 0 238px;
   }
 }
 @import 'utils/media';
